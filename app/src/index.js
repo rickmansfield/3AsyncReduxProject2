@@ -9,6 +9,8 @@ import thunk from 'redux-thunk';
 import { reducer } from './reducers/index'
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));
+console.log('index.js ln:12 store:', store);
+console.log('index.js ln:13 store.getState()', store.getState());
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
